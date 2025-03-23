@@ -6,7 +6,7 @@ const Tasks = ({ onAdd, onDelete, tasks }) => {
       onDelete(id);
     }
   }
-  console.log('tasks', tasks);
+
   return (
     <>
       <section className='w-full flex flex-col items-start'>
