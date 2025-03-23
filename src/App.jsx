@@ -64,7 +64,6 @@ function App() {
     });
   }
   function handleSelectId(id) {
-    console.log(id);
     setProjectState((prevState) => {
       return {
         ...prevState,
