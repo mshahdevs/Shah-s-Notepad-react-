@@ -30,7 +30,7 @@ export const NewProject = ({ onAdd, onCancelProject }) => {
   return (
     <>
       <Modal ref={modal}>
-        <h2 className='text-stone-700 my-3 font-semibold text-xl'>
+        <h2 className='text-stone-700 my-3  font-semibold text-xl'>
           Invalid Input
         </h2>
         <p className=' text-sm mb-2'>

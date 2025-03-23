@@ -13,7 +13,7 @@ const Modal = forwardRef(function Modal({ children }, ref) {
   return createPortal(
     <dialog
       ref={dialog}
-      className='p-3 rounded-xl shadow-md backdrop:bg-stone-700/90 '
+      className='p-3 rounded-xl shadow-md backdrop:bg-stone-500 backdrop:bg-opacity-30 '
     >
       {children}
       <form method='dialog'>
