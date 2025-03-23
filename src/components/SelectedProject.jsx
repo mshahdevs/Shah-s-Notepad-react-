@@ -1,6 +1,6 @@
 import React from 'react';
 import Tasks from './Task/Tasks';
-
+import { AiOutlineDelete } from 'react-icons/ai';
 export const SelectedProject = ({
   project,
   onDeleteProject,
@@ -19,7 +19,12 @@ export const SelectedProject = ({
         <div className=' flex justify-between'>
           <h2 className='font-medium text-xl'>{project?.title}</h2>
 
-          <button onClick={() => onDeleteProject(project?.id)}>Delete</button>
+          <button
+            className='text-red-600 shadow-md rounded-xl p-1'
+            onClick={() => onDeleteProject(project?.id)}
+          >
+            <AiOutlineDelete size={23} />
+          </button>
         </div>
         <span className='text-left text-gray-400 text-sm my-2'>
           {formattedDate}
